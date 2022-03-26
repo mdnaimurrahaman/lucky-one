@@ -10,6 +10,9 @@
 .product-info{
     margin: 15px;
 }
+.product:hover{
+    border: 2px solid #f6cde7;
+}
 /* button effect  and input value design*/
 
 .btn-cart{
@@ -30,5 +33,6 @@
     transition:all 0.3s ease;
 }
 .cart-btn{
+    display: flex;
     justify-content: center;
     }
