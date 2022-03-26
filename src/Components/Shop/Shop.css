@@ -11,6 +11,7 @@
 }
 .cart-container{
     background-color: #f6cde7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
  .cart-title{
     font-weight: 700;
@@ -40,5 +41,13 @@
 @media only screen and (max-width: 600px) {
     .shop-container{
         grid-template-columns: 1fr;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .cart-container{
+        grid-template-columns: 1fr;
+        width: 300px;
+        margin-left: 50px;
+        padding: 20px;
     }
   }

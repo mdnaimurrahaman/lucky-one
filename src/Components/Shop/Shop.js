@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import Answer from '../Qustion-Ans/Answer';
 import './Shop.css';
 
 const Shop = () => {
@@ -24,7 +25,6 @@ const Shop = () => {
         let randomItems = newCart[Math.floor(Math.random() * newCart.length)]
         const { name } = randomItems;
         alert(name);
-        setCart([]);
       }
 
     const removeItem =()=>{
@@ -48,6 +48,7 @@ const Shop = () => {
                      <button onClick={removeItem} className='btn-cart'>Choose Again</button>
                  </div>
             </div>
+            <Answer></Answer>
         </div>
     );
 };
