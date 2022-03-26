@@ -19,7 +19,17 @@ const Shop = () => {
         setCart(newCart)
     }
 
-   
+    const chooseOneItem = () => {
+        const newCart = [...cart]
+        let randomItems = newCart[Math.floor(Math.random() * newCart.length)]
+        const { name } = randomItems;
+        alert(name);
+        setCart([]);
+      }
+
+    const removeItem =()=>{
+        setCart([])
+    }
 
     return (
         <div className='shop-container container'>
